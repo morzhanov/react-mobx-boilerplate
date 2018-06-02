@@ -1,0 +1,6 @@
+.idea
+out
+gen
+dist/
+build/
+node_modules/

@@ -1,0 +1,54 @@
+{
+  "name": "mst-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Mobx-State-Tree React Boilerplate allows you to start new web project from scratch using Mobx-State-Tree, Mobx, React and Styled components.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VladMorzhanov/mst-react-boilerplate"
+  },
+  "keywords": [
+    "mobx-state-tree",
+    "react",
+    "reactjs",
+    "boilerplate",
+    "mobx"
+  ],
+  "author": "Vlad Morzhanov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "eslint": "^4.5.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.0",
+    "react-hot-loader": "^3.0.0-beta.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mobx": "^4.1.0",
+    "mobx-react": "^5.0.0",
+    "mobx-react-devtools": "^4.2.11",
+    "mobx-state-tree": "^2.0.1",
+    "node-sass": "^4.8.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "styled-components": "^3.1.6"
+  }
+}
