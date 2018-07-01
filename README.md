@@ -7,36 +7,48 @@ Also this boilerplate contains babel configuration to use decorators from ES7 an
 ## Installation
 
 Use these steps to install project
+
+```
 1. yarn install
 2. yarn start
+```
+
+Build project:
+
+```
+yarn build
+```
 
 ## Usage
 
-* Uses webpack to build project.
-* Uses Babel to compile ES6 and ES7 code. 
-* You can use SASS\SCSS within this boilerplate.
-* Check your code with ESLint.
-* Supports styled components.
-* Contains hot-module-reload.
+- Uses webpack to build project.
+- Uses Babel to compile ES6 and ES7 code.
+- You can use SASS\SCSS within this boilerplate.
+- Check your code with ESLint and Prettier.
+- Supports styled components.
+- Supports hot-module-reload.
 
 # Main Technologies and libraries
 
-* Mobx-State-Tree
-* Mobx
-* React
-* Styled components
-* ESLint
-* Babel
-* Webpack 3
-* CSS\SCSS
+- Mobx-State-Tree
+- Mobx
+- React
+- React Router
+- Styled components
+- ESLint
+- Prettier
+- Babel
+- Webpack 4
+- CSS\SCSS
+- PostCSS
 
 ## Contributing
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+1.  Fork it!
+2.  Create your feature branch: `git checkout -b my-new-feature`
+3.  Commit your changes: `git commit -am 'Add some feature'`
+4.  Push to the branch: `git push origin my-new-feature`
+5.  Submit a pull request :D
 
 ## Author
 
