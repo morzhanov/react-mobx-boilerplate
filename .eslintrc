@@ -1,40 +1,23 @@
 {
   "parser": "babel-eslint",
-  "extends": ["standard"],
-  "plugins": [
-    "standard",
-    "promise",
-    "react"
-  ],
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["jsx-a11y", "import", "react", "prettier"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": { "ecmaVersion": 6 },
   "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react/jsx-no-undef": "error",
-    "import/no-webpack-loader-syntax": "off",
-    "camelcase": "off",
-    "no-await-in-loop": "error",
-    "no-template-curly-in-string": "error",
-    "no-var": "error",
-    "prefer-const": "error",
-    "prefer-promise-reject-errors": "error",
-    "prefer-rest-params": "error",
-    "prefer-spread": "error",
-    "prefer-template": "error",
-    "require-await": "error",
-    "no-div-regex": "error",
-    "no-extra-label": "error",
-    "no-iterator": "error",
-    "no-label-var": "error",
-    "no-labels": "error",
-    "no-proto": "error",
-    "no-self-compare": "error",
-    "no-unused-labels": "error",
-    "no-with": "error",
-    "array-callback-return": "error",
-    "no-throw-literal": "error",
-    "no-unmodified-loop-condition": "error",
-    "no-unsafe-negation": "error",
-    "yoda": ["error", "never", { "exceptRange": true }],
-    "comma-dangle": "off"
+    "prettier/prettier": "error",
+    "no-unused-vars": 2,
+    "no-undef": 2,
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "semi": [2, "never"],
+    "comma-dangle": "off",
+    "react/prop-types": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }

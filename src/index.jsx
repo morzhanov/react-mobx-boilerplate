@@ -1,34 +1,20 @@
-import './styles/main.scss'
 import React from 'react'
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom'
 import { Provider } from 'mobx-react'
-import { AppContainer } from 'react-hot-loader'
-import RootStore from './stores/rootStore'
-import App from './components/app'
-import registerServiceWorker from './registerServiceWorker'
+import { createBrowserHistory } from 'history'
+import { createStores } from './stores/createStore'
+import App from './containers/App'
+import UserModel from './models/UserModel'
+import './assets/styles/main.scss'
 
-const rootStore = RootStore.create()
+const history = createBrowserHistory()
+const defautlUser = UserModel.create({ name: 'Default Name' })
+const stores = createStores(history, defautlUser)
 
-render(
-  <AppContainer>
-    <Provider rootStore={rootStore}>
-      <App/>
-    </Provider>
-  </AppContainer>,
-  document.getElementById('root')
+const root = (
+  <Provider {...stores}>
+    <App history={history} />
+  </Provider>
 )
 
-registerServiceWorker()
-
-if (module.hot) {
-  module.hot.accept('./components/app', () => {
-    const NextApp = require('./components/app').default
-
-    render(
-      <AppContainer>
-        <NextApp rootStore={rootStore}/>
-      </AppContainer>,
-      document.getElementById('root')
-    )
-  })
-}
+ReactDOM.render(root, document.getElementById('app'))
