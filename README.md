@@ -33,7 +33,6 @@ yarn build
 # Main Technologies and libraries
 
 - <a href="https://reactjs.org/">React</a>
-- <a href="https://flow.org/">Flow</a>
 - <a href="https://reacttraining.com/react-router/">React Router</a>
 - <a href="https://github.com/mobxjs/mobx-state-tree">Mobx-State-Tree</a>
 - <a href="https://github.com/mobxjs/mobx">Mobx</a>
