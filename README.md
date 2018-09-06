@@ -30,17 +30,18 @@ yarn build
 
 # Main Technologies and libraries
 
-- Mobx-State-Tree
-- Mobx
-- React
-- React Router
-- Styled components
-- ESLint
-- Prettier
-- Babel
-- Webpack 4
-- CSS\SCSS
-- PostCSS
+- <a href="https://reactjs.org/">React</a>
+- <a href="https://flow.org/">Flow</a>
+- <a href="https://reacttraining.com/react-router/">React Router</a>
+- <a href="https://github.com/mobxjs/mobx-state-tree">Mobx-State-Tree</a>
+- <a href="https://github.com/mobxjs/mobx">Mobx</a>
+- <a href="https://www.styled-components.com/">Styled components</a>
+- <a href="https://webpack.js.org/">Webpack 4</a>
+- <a href="https://eslint.org/">ESLint</a>
+- <a href="https://github.com/prettier/prettier">Prettier</a>
+- <a href="https://babeljs.io/">Babel</a>
+- <a href="https://sass-lang.com/">SCSS</a>
+- <a href="https://postcss.org/">PostCSS</a>
 
 ## Contributing
 
