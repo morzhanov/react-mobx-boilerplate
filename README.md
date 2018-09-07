@@ -30,7 +30,7 @@ yarn build
 - Supports styled components.
 - Supports hot-module-reload.
 
-# Main Technologies and libraries
+## Main Technologies and libraries
 
 - <a href="https://reactjs.org/">React</a>
 - <a href="https://reacttraining.com/react-router/">React Router</a>
