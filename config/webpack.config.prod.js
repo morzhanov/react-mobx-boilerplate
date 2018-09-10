@@ -218,22 +218,6 @@ module.exports = {
       // Don't precache sourcemaps (they're large) and build asset manifest:
       staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
     }),
-    new PrerenderSPAPlugin({
-      // Index.html is in the root directory.
-      staticDir: path.join(__dirname, '..', 'build'),
-      routes: ['/', '/profile'],
-      // Optional minification.
-      minify: {
-        collapseBooleanAttributes: true,
-        collapseWhitespace: true,
-        decodeEntities: true,
-        keepClosingSlash: true,
-        sortAttributes: true
-      },
-      renderer: new Renderer({
-        renderAfterTime: 500
-      })
-    }),
     // Moment.js is an extremely popular library that bundles large locale files
     // by default due to how Webpack interprets its code. This is a practical
     // solution that requires the user to opt into importing specific locales.
