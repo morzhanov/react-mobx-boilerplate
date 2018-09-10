@@ -30,7 +30,6 @@
     "mobx-react": "^5.1.2",
     "mobx-react-router": "^4.0.4",
     "mobx-state-tree": "^2.0.5",
-    "prerender-spa-plugin": "^3.4.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-hot-loader": "^4.0.0",
