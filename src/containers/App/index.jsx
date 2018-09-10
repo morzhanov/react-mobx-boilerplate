@@ -5,15 +5,15 @@ import styled from 'styled-components'
 import { createBrowserHistory, History } from 'history'
 import { createStores } from '../../stores/createStore'
 import UserModel from '../../models/UserModel'
-import Home from '../containers/Home'
-import Profile from '../containers/Profile'
+import Home from '../Home'
+import Profile from '../Profile'
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
 `
 
-const history: History = createBrowserHistory()
+const history = createBrowserHistory()
 const defautlUser = UserModel.create({
   name: 'Default Name'
 })

@@ -1,5 +1,5 @@
-import RootStore from './RootStore'
-import RouterStore from './RouterStore'
+import RootStore from './rootStore'
+import RouterStore from './routerStore'
 import UserModel from '../models/UserModel'
 
 export function createStores(history, user) {
