@@ -1,8 +1,8 @@
-# Mobx-State-Tree React Boilerplate
+# React Mobx Boilerplate
 
 <img src="https://i.imgur.com/i0b7poT.png"/>
 
-Mobx-State-Tree React Boilerplate allows you to start new web project from scratch using Mobx-State-Tree, Mobx, React and Styled components.
+React Mobx Boilerplate allows you to start new web project from scratch using Mobx-State-Tree, Mobx, React and Styled components.
 
 Also this boilerplate contains babel configuration to use decorators from ES7 and HMR for React.
 
