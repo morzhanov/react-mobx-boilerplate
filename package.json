@@ -1,7 +1,7 @@
 {
-  "name": "mst-react-boilerplate",
+  "name": "react-mobx-boilerplate",
   "version": "2.1.0",
-  "description": "Mobx-State-Tree React Boilerplate allows you to start new web project from scratch using Mobx-State-Tree, Mobx, React and Styled components.",
+  "description": "React MObx Boilerplate allows you to start new web project from scratch using Mobx-State-Tree, Mobx, React and Styled components.",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server  --config config/webpack.config.dev.js --mode development",
     "bld": "sh -ac '. ./.env.${REACT_APP_BUILD_MODE}; node ./config/scripts/build.js'",
