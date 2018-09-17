@@ -4,15 +4,15 @@ function InterpolateHTMLPlugin(options) {
   this.replacements = options
 }
 
-InterpolateHTMLPlugin.prototype.apply = function(compiler) {
-  compiler.hooks.compilation.tap('InterpolateHTMLPlugin', (compilation) => {
+InterpolateHTMLPlugin.prototype.apply = compiler => {
+  compiler.hooks.compilation.tap('InterpolateHTMLPlugin', compilation => {
     compilation.hooks.htmlWebpackPluginBeforeHtmlProcessing.tapAsync(
       'InterpolateHTMLPlugin',
       (data, cb) => {
-        Object.keys(this.replacements).forEach((key) => {
+        Object.keys(this.replacements).forEach(key => {
           const value = this.replacements[key]
           data.html = data.html.replace(
-            new RegExp('%' + escapeStringRegexp(key) + '%', 'g'),
+            new RegExp(`%${escapeStringRegexp(key)}%`, 'g'),
             value
           )
         })

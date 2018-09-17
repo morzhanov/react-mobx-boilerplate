@@ -1,4 +1,5 @@
 const paths = require('./paths')
+
 const protocol = process.env.WEBPACK_HTTPS === 'true' ? 'https' : 'http'
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 3000
@@ -33,7 +34,7 @@ module.exports = {
   // to CSS are currently hot reloaded. JS changes will refresh the browser.
   hot: true,
   progress: true,
-  port: port,
+  port,
   // It is important to tell WebpackDevServer to use the same "root" path
   // as we specified in the config. In development, we always serve from /.
   publicPath: paths.publicPath,
@@ -44,7 +45,7 @@ module.exports = {
   },
   // Enable HTTPS if the HTTPS environment variable is set to 'true'
   https: protocol === 'https',
-  host: host,
+  host,
   overlay: false,
   historyApiFallback: {
     // Paths with dots should still use the history fallback.

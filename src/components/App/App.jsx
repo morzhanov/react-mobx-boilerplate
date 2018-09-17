@@ -1,8 +1,8 @@
 import React from 'react'
 import { Provider } from 'mobx-react'
-import Router from '../../router/router'
 import styled from 'styled-components'
-import { createBrowserHistory, History } from 'history'
+import { createBrowserHistory } from 'history'
+import Router from '../../router/router'
 import { createStores } from '../../stores/createStore'
 import UserModel from '../../models/UserModel'
 

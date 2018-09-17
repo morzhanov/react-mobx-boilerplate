@@ -1,9 +1,10 @@
 const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const getClientEnvironment = require('./env')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
+const getClientEnvironment = require('./env')
 const InterpolateHTMLPlugin = require('./plugins/InterpolateHTMLPlugin')
+
 const sourcePath = path.join(__dirname, './src')
 const outPath = path.join(__dirname, './dist')
 const paths = require('./paths')
