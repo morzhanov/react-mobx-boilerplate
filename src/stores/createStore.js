@@ -1,12 +1,12 @@
-import RootStore from './rootStore'
+import UiStore from './uiStore'
 import RouterStore from './routerStore'
 import UserModel from '../models/UserModel'
 
 export function createStores(history, user) {
-  const rootStore = RootStore.create({ user }, { user: UserModel })
+  const uiStore = UiStore.create({ user }, { user: UserModel })
   const routerStore = new RouterStore(history)
   return {
-    rootStore,
+    uiStore,
     routerStore
   }
 }

@@ -3,12 +3,12 @@ import { inject, observer } from 'mobx-react'
 import Header from '../shared/Header/Header'
 import Container from '../shared/Container/Container'
 
-const Home = ({ rootStore }) => (
+const Home = ({ uiStore }) => (
   <>
     <Header title="Home Page" />
     <Container content="Home page content" />
-    {rootStore.user.name}
+    {uiStore.user.name}
   </>
 )
 
-export default inject('rootStore')(observer(Home))
+export default inject('uiStore')(observer(Home))

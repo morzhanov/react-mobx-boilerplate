@@ -3,11 +3,11 @@ import { inject, observer } from 'mobx-react'
 import Header from '../shared/Header/Header'
 import Container from '../shared/Container/Container'
 
-const Profile = ({ rootStore }) => (
+const Profile = ({ uiStore }) => (
   <>
     <Header title="Profile page" />
-    <Container content={rootStore.user.name} />
+    <Container content={uiStore.user.name} />
   </>
 )
 
-export default inject('rootStore')(observer(Profile))
+export default inject('uiStore')(observer(Profile))

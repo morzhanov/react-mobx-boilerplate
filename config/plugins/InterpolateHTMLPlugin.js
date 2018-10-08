@@ -4,7 +4,7 @@ function InterpolateHTMLPlugin(options) {
   this.replacements = options
 }
 
-InterpolateHTMLPlugin.prototype.apply = compiler => {
+InterpolateHTMLPlugin.prototype.apply = function(compiler) {
   compiler.hooks.compilation.tap('InterpolateHTMLPlugin', compilation => {
     compilation.hooks.htmlWebpackPluginBeforeHtmlProcessing.tapAsync(
       'InterpolateHTMLPlugin',

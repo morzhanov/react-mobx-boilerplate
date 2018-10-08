@@ -15,11 +15,11 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
-const Container = ({ rootStore, content }) => (
+const Container = ({ uiStore, content }) => (
   <Wrapper>
     {content}
-    {rootStore.user.name}
+    {uiStore.user.name}
   </Wrapper>
 )
 
-export default inject('rootStore')(observer(Container))
+export default inject('uiStore')(observer(Container))
