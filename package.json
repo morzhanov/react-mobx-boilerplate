@@ -2,16 +2,11 @@
   "name": "react-mobx-boilerplate",
   "version": "2.3.0",
   "description": "React MObx Boilerplate allows you to start new web project from scratch using Mobx-State-Tree, Mobx, React and Styled components.",
-  "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server  --config config/webpack.config.dev.js --mode development",
-    "bld": "sh -ac '. ./.env.${REACT_APP_BUILD_MODE}; node ./config/scripts/build.js'",
-    "build": "REACT_APP_BUILD_MODE=development yarn run bld",
-    "staging": "REACT_APP_BUILD_MODE=staging yarn run bld",
-    "production": "REACT_APP_BUILD_MODE=production yarn run bld"
-  },
+  "author": "Vlad Morzhanov",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VladMorzhanov/mst-react-boilerplate"
+    "url": "https://github.com/morzhanov/react-mobx-boilerplate"
   },
   "keywords": [
     "mobx-state-tree",
@@ -20,8 +15,13 @@
     "boilerplate",
     "mobx"
   ],
-  "author": "Vlad Morzhanov",
-  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server  --config config/webpack.config.dev.js --mode development",
+    "bld": "sh -ac '. ./.env.${REACT_APP_BUILD_MODE}; node ./config/scripts/build.js'",
+    "build": "REACT_APP_BUILD_MODE=development yarn run bld",
+    "staging": "REACT_APP_BUILD_MODE=staging yarn run bld",
+    "production": "REACT_APP_BUILD_MODE=production yarn run bld"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "history": "^4.7.2",
